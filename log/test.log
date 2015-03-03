@@ -2292,3 +2292,618 @@ ProductTest: test_image_url_shoul_be_jpg,_png,_gif_not_other_formats
   [1m[36mProduct Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "products" WHERE "products"."title" IS NULL LIMIT 1[0m
   [1m[35mProduct Exists (0.0ms)[0m  SELECT  1 AS one FROM "products" WHERE "products"."title" IS NULL LIMIT 1
   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "options"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "options" ("fuck", "created_at", "updated_at", "id") VALUES ('This is a love story.', '2015-03-03 13:38:38', '2015-03-03 13:38:38', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "options" ("fuck", "created_at", "updated_at", "id") VALUES ('MyString', '2015-03-03 13:38:38', '2015-03-03 13:38:38', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2015-03-03 13:38:38', '2015-03-03 13:38:38', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2015-03-03 13:38:38', '2015-03-03 13:38:38', 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('A fixture', 'Ku', 'MyString', 9.99, '2015-03-03 13:38:38', '2015-03-03 13:38:38', 387902468)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "rubies"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "rubies" ("title", "created_at", "updated_at", "id") VALUES ('ruby on rails 4', '2015-03-03 13:38:38', '2015-03-03 13:38:38', 207281424)[0m
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------
+ProductTest: test_Duang!!
+-------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------
+ProductTest: test_image_url_shoul_be_jpg,_png,_gif_not_other_formats
+--------------------------------------------------------------------
+  [1m[35mProduct Exists (0.2ms)[0m  SELECT  1 AS one FROM "products" WHERE "products"."title" IS NULL LIMIT 1
+  [1m[36mProduct Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "products" WHERE "products"."title" IS NULL LIMIT 1[0m
+  [1m[35mProduct Exists (0.1ms)[0m  SELECT  1 AS one FROM "products" WHERE "products"."title" IS NULL LIMIT 1
+  [1m[36mProduct Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "products" WHERE "products"."title" IS NULL LIMIT 1[0m
+  [1m[35mProduct Exists (0.1ms)[0m  SELECT  1 AS one FROM "products" WHERE "products"."title" IS NULL LIMIT 1
+  [1m[36mProduct Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "products" WHERE "products"."title" IS NULL LIMIT 1[0m
+  [1m[35mProduct Exists (0.1ms)[0m  SELECT  1 AS one FROM "products" WHERE "products"."title" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------------
+ProductTest: test_Options_of_fixture_should_be_loaded
+-----------------------------------------------------
+  [1m[36mOption Load (0.2ms)[0m  [1mSELECT  "options".* FROM "options" WHERE "options"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------
+ProductTest: test_Products_of_products_should_be_loaded
+-------------------------------------------------------
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 387902468]]
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------------
+ProductTest: test_fixtures_should_have_been_exists
+--------------------------------------------------
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."title" = ?  ORDER BY "products"."title" ASC LIMIT 1[0m  [["title", "A fixture"]]
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------
+ProductTest: test_Test_Your_Mother
+----------------------------------
+  [1m[35mProduct Exists (0.1ms)[0m  SELECT  1 AS one FROM "products" WHERE "products"."title" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "fucking_options"[0m
+SQLite3::SQLException: no such table: fucking_options: DELETE FROM "fucking_options"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "fucking_options"
+SQLite3::SQLException: no such table: fucking_options: DELETE FROM "fucking_options"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "fucking_options"[0m
+SQLite3::SQLException: no such table: fucking_options: DELETE FROM "fucking_options"
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "fucking_options"
+SQLite3::SQLException: no such table: fucking_options: DELETE FROM "fucking_options"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "fucking_options"[0m
+SQLite3::SQLException: no such table: fucking_options: DELETE FROM "fucking_options"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "fucking_options"
+SQLite3::SQLException: no such table: fucking_options: DELETE FROM "fucking_options"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "fucking_options"[0m
+SQLite3::SQLException: no such table: fucking_options: DELETE FROM "fucking_options"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "fucking_options"
+SQLite3::SQLException: no such table: fucking_options: DELETE FROM "fucking_options"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "fucking_options"[0m
+SQLite3::SQLException: no such table: fucking_options: DELETE FROM "fucking_options"
+  [1m[35m (49.5ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "options"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "options" ("fuck", "created_at", "updated_at", "id") VALUES ('This is a love story.', '2015-03-03 14:04:17', '2015-03-03 14:04:17', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "options" ("fuck", "created_at", "updated_at", "id") VALUES ('MyString', '2015-03-03 14:04:17', '2015-03-03 14:04:17', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2015-03-03 14:04:17', '2015-03-03 14:04:17', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2015-03-03 14:04:17', '2015-03-03 14:04:17', 298486374)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('A fixture', 'Ku', 'MyString', 9.99, '2015-03-03 14:04:17', '2015-03-03 14:04:17', 387902468)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "rubies"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "rubies" ("title", "created_at", "updated_at", "id") VALUES ('ruby on rails 4', '2015-03-03 14:04:17', '2015-03-03 14:04:17', 207281424)[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+------------------------------------------
+StoreControllerTest: test_should_get_about
+------------------------------------------
+Processing by StoreController#about as HTML
+  Rendered store/about.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 115ms (Views: 114.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+------------------------------------------
+StoreControllerTest: test_should_get_index
+------------------------------------------
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"  ORDER BY "products"."title" ASC
+  Rendered store/index.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------------
+ProductsControllerTest: test_should_update_product
+--------------------------------------------------
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by ProductsController#update as HTML
+  Parameters: {"product"=>{"description"=>"This is a short description", "image_url"=>"/assets/images/fuckyou.png", "price"=>"0.1", "title"=>"A new product"}, "id"=>"980190962"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ?  ORDER BY "products"."title" ASC LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mProduct Exists (0.1ms)[0m  SELECT  1 AS one FROM "products" WHERE ("products"."title" = 'A new product' AND "products"."id" != 980190962) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "products" SET "title" = ?, "description" = ?, "image_url" = ?, "price" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["title", "A new product"], ["description", "This is a short description"], ["image_url", "/assets/images/fuckyou.png"], ["price", 0.1], ["updated_at", "2015-03-03 14:04:17.901029"], ["id", 980190962]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/products/980190962
+Completed 302 Found in 15ms (ActiveRecord: 0.9ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------
+ProductsControllerTest: test_should_destroy_product
+---------------------------------------------------
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "products"
+Processing by ProductsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ?  ORDER BY "products"."title" ASC LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/products
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "products"[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+ProductsControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ?  ORDER BY "products"."title" ASC LIMIT 1[0m  [["id", 980190962]]
+  Rendered products/_form.html.erb (53.7ms)
+  Rendered products/edit.html.erb within layouts/application (58.6ms)
+Completed 200 OK in 67ms (Views: 65.3ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------------
+ProductsControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"  ORDER BY "products"."title" ASC[0m
+  Rendered products/index.html.erb within layouts/application (102.0ms)
+Completed 200 OK in 107ms (Views: 106.6ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------
+ProductsControllerTest: test_should_get_new
+-------------------------------------------
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (2.2ms)
+  Rendered products/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------------
+ProductsControllerTest: test_should_create_product
+--------------------------------------------------
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "products"
+Processing by ProductsController#create as HTML
+  Parameters: {"product"=>{"description"=>"This is a short description", "image_url"=>"/assets/images/fuckyou.png", "price"=>"0.1", "title"=>"A new product"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mProduct Exists (0.1ms)[0m  SELECT  1 AS one FROM "products" WHERE "products"."title" = 'A new product' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "A new product"], ["description", "This is a short description"], ["image_url", "/assets/images/fuckyou.png"], ["price", 0.1], ["created_at", "2015-03-03 14:04:18.114050"], ["updated_at", "2015-03-03 14:04:18.114050"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/products/980190963
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "products"[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------------
+ProductsControllerTest: test_should_show_product
+------------------------------------------------
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ?  ORDER BY "products"."title" ASC LIMIT 1[0m  [["id", 980190962]]
+  Rendered products/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "options"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "options" ("fuck", "created_at", "updated_at", "id") VALUES ('This is a love story.', '2015-03-03 14:08:46', '2015-03-03 14:08:46', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "options" ("fuck", "created_at", "updated_at", "id") VALUES ('MyString', '2015-03-03 14:08:46', '2015-03-03 14:08:46', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2015-03-03 14:08:46', '2015-03-03 14:08:46', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2015-03-03 14:08:46', '2015-03-03 14:08:46', 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('A fixture', 'Ku', 'MyString', 9.99, '2015-03-03 14:08:46', '2015-03-03 14:08:46', 387902468)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "rubies"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "rubies" ("title", "created_at", "updated_at", "id") VALUES ('ruby on rails 4', '2015-03-03 14:08:46', '2015-03-03 14:08:46', 207281424)[0m
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------
+StoreControllerTest: test_should_get_about
+------------------------------------------
+Processing by StoreController#about as HTML
+  Rendered store/about.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------
+StoreControllerTest: test_should_get_index
+------------------------------------------
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"  ORDER BY "products"."title" ASC
+  Rendered store/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 66ms (Views: 65.2ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "fucking_options"[0m
+SQLite3::SQLException: no such table: fucking_options: DELETE FROM "fucking_options"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "fucking_options"
+SQLite3::SQLException: no such table: fucking_options: DELETE FROM "fucking_options"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "fucking_options"[0m
+SQLite3::SQLException: no such table: fucking_options: DELETE FROM "fucking_options"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "fucking_options"
+SQLite3::SQLException: no such table: fucking_options: DELETE FROM "fucking_options"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "fucking_options"[0m
+SQLite3::SQLException: no such table: fucking_options: DELETE FROM "fucking_options"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "fucking_options"
+SQLite3::SQLException: no such table: fucking_options: DELETE FROM "fucking_options"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "fucking_options"[0m
+SQLite3::SQLException: no such table: fucking_options: DELETE FROM "fucking_options"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "fucking_options"[0m
+SQLite3::SQLException: no such table: fucking_options: DELETE FROM "fucking_options"
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "fucking_options"
+SQLite3::SQLException: no such table: fucking_options: DELETE FROM "fucking_options"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "options"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "options" ("fuck", "created_at", "updated_at", "id") VALUES ('This is a love story.', '2015-03-03 14:09:44', '2015-03-03 14:09:44', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "options" ("fuck", "created_at", "updated_at", "id") VALUES ('MyString', '2015-03-03 14:09:44', '2015-03-03 14:09:44', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2015-03-03 14:09:44', '2015-03-03 14:09:44', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2015-03-03 14:09:44', '2015-03-03 14:09:44', 298486374)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('A fixture', 'Ku', 'MyString', 9.99, '2015-03-03 14:09:44', '2015-03-03 14:09:44', 387902468)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "rubies"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "rubies" ("title", "created_at", "updated_at", "id") VALUES ('ruby on rails 4', '2015-03-03 14:09:44', '2015-03-03 14:09:44', 207281424)[0m
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------
+ProductsControllerTest: test_should_create_product
+--------------------------------------------------
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "products"[0m
+Processing by ProductsController#create as HTML
+  Parameters: {"product"=>{"description"=>"This is a short description", "image_url"=>"/assets/images/fuckyou.png", "price"=>"0.1", "title"=>"A new product"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mProduct Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "products" WHERE "products"."title" = 'A new product' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["title", "A new product"], ["description", "This is a short description"], ["image_url", "/assets/images/fuckyou.png"], ["price", 0.1], ["created_at", "2015-03-03 14:09:44.611880"], ["updated_at", "2015-03-03 14:09:44.611880"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/products/980190963
+Completed 302 Found in 12ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------
+ProductsControllerTest: test_should_show_product
+------------------------------------------------
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ?  ORDER BY "products"."title" ASC LIMIT 1  [["id", 980190962]]
+  Rendered products/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------
+ProductsControllerTest: test_should_get_new
+-------------------------------------------
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (10.4ms)
+  Rendered products/new.html.erb within layouts/application (52.8ms)
+Completed 200 OK in 57ms (Views: 56.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------
+ProductsControllerTest: test_should_update_product
+--------------------------------------------------
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by ProductsController#update as HTML
+  Parameters: {"product"=>{"description"=>"This is a short description", "image_url"=>"/assets/images/fuckyou.png", "price"=>"0.1", "title"=>"A new product"}, "id"=>"980190962"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ?  ORDER BY "products"."title" ASC LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mProduct Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "products" WHERE ("products"."title" = 'A new product' AND "products"."id" != 980190962) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "products" SET "title" = ?, "description" = ?, "image_url" = ?, "price" = ?, "updated_at" = ? WHERE "products"."id" = ?  [["title", "A new product"], ["description", "This is a short description"], ["image_url", "/assets/images/fuckyou.png"], ["price", 0.1], ["updated_at", "2015-03-03 14:09:44.707468"], ["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/products/980190962
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+ProductsControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ?  ORDER BY "products"."title" ASC LIMIT 1[0m  [["id", 980190962]]
+  Rendered products/_form.html.erb (2.3ms)
+  Rendered products/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------------------
+ProductsControllerTest: test_should_destroy_product
+---------------------------------------------------
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "products"[0m
+Processing by ProductsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ?  ORDER BY "products"."title" ASC LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "products" WHERE "products"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/products
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------
+ProductsControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"  ORDER BY "products"."title" ASC
+  Rendered products/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "options"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "options" ("fuck", "created_at", "updated_at", "id") VALUES ('This is a love story.', '2015-03-03 14:10:10', '2015-03-03 14:10:10', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "options" ("fuck", "created_at", "updated_at", "id") VALUES ('MyString', '2015-03-03 14:10:10', '2015-03-03 14:10:10', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2015-03-03 14:10:10', '2015-03-03 14:10:10', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2015-03-03 14:10:10', '2015-03-03 14:10:10', 298486374)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('A fixture', 'Ku', 'MyString', 9.99, '2015-03-03 14:10:10', '2015-03-03 14:10:10', 387902468)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "rubies"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "rubies" ("title", "created_at", "updated_at", "id") VALUES ('ruby on rails 4', '2015-03-03 14:10:10', '2015-03-03 14:10:10', 207281424)[0m
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------
+StoreControllerTest: test_should_get_index
+------------------------------------------
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"  ORDER BY "products"."title" ASC
+  Rendered store/index.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 37ms (Views: 36.6ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------
+StoreControllerTest: test_should_get_about
+------------------------------------------
+Processing by StoreController#about as HTML
+  Rendered store/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 45ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------
+ProductsControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ?  ORDER BY "products"."title" ASC LIMIT 1  [["id", 980190962]]
+  Rendered products/_form.html.erb (8.8ms)
+  Rendered products/edit.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------------
+ProductsControllerTest: test_should_show_product
+------------------------------------------------
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ?  ORDER BY "products"."title" ASC LIMIT 1  [["id", 980190962]]
+  Rendered products/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------------
+ProductsControllerTest: test_should_update_product
+--------------------------------------------------
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by ProductsController#update as HTML
+  Parameters: {"product"=>{"description"=>"This is a short description", "image_url"=>"/assets/images/fuckyou.png", "price"=>"0.1", "title"=>"A new product"}, "id"=>"980190962"}
+  [1m[35mProduct Load (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ?  ORDER BY "products"."title" ASC LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mProduct Exists (0.2ms)[0m  SELECT  1 AS one FROM "products" WHERE ("products"."title" = 'A new product' AND "products"."id" != 980190962) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "products" SET "title" = ?, "description" = ?, "image_url" = ?, "price" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["title", "A new product"], ["description", "This is a short description"], ["image_url", "/assets/images/fuckyou.png"], ["price", 0.1], ["updated_at", "2015-03-03 14:10:10.397129"], ["id", 980190962]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/products/980190962
+Completed 302 Found in 12ms (ActiveRecord: 0.7ms)
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------
+ProductsControllerTest: test_should_get_new
+-------------------------------------------
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (2.1ms)
+  Rendered products/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------------------
+ProductsControllerTest: test_should_destroy_product
+---------------------------------------------------
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "products"[0m
+Processing by ProductsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ?  ORDER BY "products"."title" ASC LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "products" WHERE "products"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/products
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------
+ProductsControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products"  ORDER BY "products"."title" ASC
+  Rendered products/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------------
+ProductsControllerTest: test_should_create_product
+--------------------------------------------------
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "products"
+Processing by ProductsController#create as HTML
+  Parameters: {"product"=>{"description"=>"This is a short description", "image_url"=>"/assets/images/fuckyou.png", "price"=>"0.1", "title"=>"A new product"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mProduct Exists (0.1ms)[0m  SELECT  1 AS one FROM "products" WHERE "products"."title" = 'A new product' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "A new product"], ["description", "This is a short description"], ["image_url", "/assets/images/fuckyou.png"], ["price", 0.1], ["created_at", "2015-03-03 14:10:10.449906"], ["updated_at", "2015-03-03 14:10:10.449906"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/products/980190963
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "products"[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "options"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "options" ("fuck", "created_at", "updated_at", "id") VALUES ('This is a love story.', '2015-03-03 14:11:30', '2015-03-03 14:11:30', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "options" ("fuck", "created_at", "updated_at", "id") VALUES ('MyString', '2015-03-03 14:11:30', '2015-03-03 14:11:30', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2015-03-03 14:11:30', '2015-03-03 14:11:30', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', 9.99, '2015-03-03 14:11:30', '2015-03-03 14:11:30', 298486374)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at", "id") VALUES ('iPhone 6', 'Ku', 'MyString', 9.99, '2015-03-03 14:11:30', '2015-03-03 14:11:30', 387902468)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "rubies"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "rubies" ("title", "created_at", "updated_at", "id") VALUES ('ruby on rails 4', '2015-03-03 14:11:30', '2015-03-03 14:11:30', 207281424)[0m
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------------
+ProductsControllerTest: test_should_show_product
+------------------------------------------------
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ?  ORDER BY "products"."title" ASC LIMIT 1[0m  [["id", 980190962]]
+  Rendered products/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------------------
+ProductsControllerTest: test_should_destroy_product
+---------------------------------------------------
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "products"[0m
+Processing by ProductsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ?  ORDER BY "products"."title" ASC LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "products" WHERE "products"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/products
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------------
+ProductsControllerTest: test_should_create_product
+--------------------------------------------------
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "products"
+Processing by ProductsController#create as HTML
+  Parameters: {"product"=>{"description"=>"This is a short description", "image_url"=>"/assets/images/fuckyou.png", "price"=>"0.1", "title"=>"A new product"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mProduct Exists (0.1ms)[0m  SELECT  1 AS one FROM "products" WHERE "products"."title" = 'A new product' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "A new product"], ["description", "This is a short description"], ["image_url", "/assets/images/fuckyou.png"], ["price", 0.1], ["created_at", "2015-03-03 14:11:31.033172"], ["updated_at", "2015-03-03 14:11:31.033172"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/products/980190963
+Completed 302 Found in 12ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "products"[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------
+ProductsControllerTest: test_should_update_product
+--------------------------------------------------
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by ProductsController#update as HTML
+  Parameters: {"product"=>{"description"=>"This is a short description", "image_url"=>"/assets/images/fuckyou.png", "price"=>"0.1", "title"=>"A new product"}, "id"=>"980190962"}
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ?  ORDER BY "products"."title" ASC LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mProduct Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "products" WHERE ("products"."title" = 'A new product' AND "products"."id" != 980190962) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "products" SET "title" = ?, "description" = ?, "image_url" = ?, "price" = ?, "updated_at" = ? WHERE "products"."id" = ?  [["title", "A new product"], ["description", "This is a short description"], ["image_url", "/assets/images/fuckyou.png"], ["price", 0.1], ["updated_at", "2015-03-03 14:11:31.043980"], ["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/products/980190962
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------------
+ProductsControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"  ORDER BY "products"."title" ASC[0m
+  Rendered products/index.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 65ms (Views: 63.9ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------
+ProductsControllerTest: test_should_get_new
+-------------------------------------------
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (10.4ms)
+  Rendered products/new.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------
+ProductsControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mProduct Load (0.0ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ?  ORDER BY "products"."title" ASC LIMIT 1  [["id", 980190962]]
+  Rendered products/_form.html.erb (2.1ms)
+  Rendered products/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------
+StoreControllerTest: test_should_get_about
+------------------------------------------
+Processing by StoreController#about as HTML
+  Rendered store/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------
+StoreControllerTest: test_should_get_index
+------------------------------------------
+Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"  ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction

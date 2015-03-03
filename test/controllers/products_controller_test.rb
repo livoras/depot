@@ -1,6 +1,8 @@
 require 'test_helper'
 
 class ProductsControllerTest < ActionController::TestCase
+  set_fixture_class :fucking_options => Option
+  
   setup do
     @product = products(:one)
     @product.title = "A new product"

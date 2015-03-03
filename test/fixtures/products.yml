@@ -13,7 +13,7 @@ two:
   price: 9.99
 
 iphone6:
-  title: "A fixture"
+  title: "iPhone 6"
   description: Ku
   image_url: MyString
   price: 9.99
