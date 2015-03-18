@@ -1,0 +1,16 @@
+<h1>Diao Diao De.</h1>
+
+<% if notice %>
+  <p id="notice"><%= notice %></p>
+<% end %>
+
+<ul>
+  <%= render @cart.line_items %>
+</ul>
+
+<%= button_to "Empty cart", 
+              @cart, :method => :delete, 
+              :data => {:confirm => "Are you sure?"}%>
+
+<%= link_to 'Edit', edit_cart_path(@cart) %> |
+<%= link_to 'Back', carts_path %>
